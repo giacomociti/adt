@@ -12,7 +12,6 @@ namespace AbstractDataTypes
         member this.dequeue() =
             match this with
             | Empty -> Empty
-            | NonEmpty(_, Empty) -> Empty
             | NonEmpty(_, rest) -> rest
 
         member this.item = 
